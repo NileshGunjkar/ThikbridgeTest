@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThikbridgeTest", "ThikbridgeTest\ThikbridgeTest.csproj", "{22124078-78AA-4B7E-94A0-D1CBCE7C72B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22124078-78AA-4B7E-94A0-D1CBCE7C72B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22124078-78AA-4B7E-94A0-D1CBCE7C72B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22124078-78AA-4B7E-94A0-D1CBCE7C72B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22124078-78AA-4B7E-94A0-D1CBCE7C72B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {16A6D72B-F133-4C4F-A056-AA9207389D9A}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,48 @@
+﻿@model ThikbridgeTest.Models.ComponentViewModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var componentList = Model.componentModelList;
+}
+
+<p>
+    @*@Html.ActionLink("Create New", "Create")*@
+    @{Html.RenderPartial("~/Views/Shared/_AddNew.cshtml", new ThikbridgeTest.Models.Component()); }
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("Name")
+        </th>
+        <th>
+            @Html.DisplayName("Price")
+        </th>
+        <th>
+            @Html.DisplayName("Image")
+        </th>
+        <th></th>
+    </tr>
+@if (componentList != null)
+{
+    foreach (var item in componentList)
+    {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price,new {Value="" })
+        </td>
+        <td>
+            <img src="~/Content/Images/@item.Picture" Style="width:50px; height:50px" >
+        </td>
+        <td>
+            @Html.ActionLink("Details", "Details", new { id = item.Id }) |           
+            @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+        </td>
+    </tr>
+    }
+}
+
+</table>
